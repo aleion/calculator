@@ -28,11 +28,17 @@ body{
 .calculator{
     width: 100%;
     height:  100vh;
+    padding: 35px 0px;
     background-color: rgb(217, 216, 212);
     display: grid;
     justify-items: center;
     grid-gap: 20px;
-    padding-top: 40px;
+    margin: 0px ;
+}
+.container{
+    display: grid;
+    justify-items: center;
+
 }
 
 .screen{
