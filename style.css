@@ -35,7 +35,7 @@ body{
 }
 
 .screen{
-    width: 300px;
+    width: 330px;
     height: 100px;
     background-color:rgb(76, 79, 82);
     margin-top: 12px;
@@ -95,7 +95,7 @@ body{
     display: grid;
     align-content: center;
     grid-template-columns: 90px 40px auto ;
-    margin: 0 auto 10px auto;
+    margin: 30px auto 30px auto;
 }
 .on{
     display: grid;
