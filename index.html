@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <script src="https://kit.fontawesome.com/6d13c66697.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600,700,800&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>  
+
+</head>
+<body>
+    <div class="calculator">
+        <div class="screen">
+            <form name="calc">
+                    <div class="light2"></div>
+                <input type="text" id="entry" class="entry" value="0" readonly>
+                <p class="casio">CALC-2000</p>
+                
+            </form>
+        </div>
+        <div class="retro-screen">
+            <div class="button-on">
+                <div class="inner-button-on"></div>
+                <div class="switch-line"></div>
+                <button id="turningOn" class="switch on">
+                        <hr width="1" size="26">
+                        <hr width="1" size="26">
+                        <hr width="1" size="26">
+                        <hr width="1" size="26">
+                </button>
+            </div>
+            <div class="on"> <h3>ON</h3></div>
+            <div class="logo">
+                <div class="brand">
+                    <p>RETRO</p>
+                    <p>CALCULATOR</p>
+                </div>
+                <div class="solar">
+                    <div class="sub-solar">
+                            <div class="light"></div>
+                            <hr width="1" size="26">
+                            <hr width="1" size="26">
+                            <hr width="1" size="26">
+                            <hr width="1" size="26">
+                    </div>
+                </div>
+            </div>            
+        </div>
+
+        <div class="buttons">
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(7)">7</button>
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(8)">8</button>
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(9)">9</button>
+            <button class="btn-style mathBut" id="numBut" type="button" onclick="mathButPress('/')"><i class="fas fa-divide"></i></button>
+            
+
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(4)">4</button>
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(5)">5</button>
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(6)">6</button>
+            <button class="btn-style mathBut" id="mathBut" type="button" onclick="mathButPress('*')"><i class="fas fa-times"></i></button>
+            
+
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(1)">1</button>
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(2)">2</button>
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(3)">3</button>
+            <button class="btn-style mathBut" id="mathBut" type="button" onclick="mathButPress('-')"><i class="fas fa-minus"></i></button>
+            
+
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress(0)">0</button>
+            <button class="btn-style numBut" id="numBut" type="button" onclick="numButPress('.')">.</button>
+            <button class="btn-style clearBut " id="clearBut" type="button" onclick="clearButPress()">AC</button>
+            <button class="btn-style mathBut" id="mathBut" type="button" onclick="mathButPress('+')"><i class="fas fa-plus"></i></button>
+
+            <button class="btn-style equalBut span2" id="equalBut" type="button" onclick="equalButPress()"><i class="fas fa-equals"></i></button>
+        </div>
+    </div>
+  
+  
+</body>
+</html>
+
