@@ -30,15 +30,8 @@ body{
     height:  100vh;
     padding: 35px 0px;
     background-color: rgb(217, 216, 212);
-    display: grid;
-    justify-items: center;
     grid-gap: 20px;
     margin: 0px ;
-}
-.container{
-    display: grid;
-    justify-items: center;
-
 }
 
 .screen{
@@ -47,6 +40,9 @@ body{
     background-color:rgb(76, 79, 82);
     margin-top: 12px;
     border-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
     display: grid;
     align-content: top;
     justify-items: center;
@@ -99,6 +95,7 @@ body{
     display: grid;
     align-content: center;
     grid-template-columns: 90px 40px auto ;
+    margin: 0 auto 10px auto;
 }
 .on{
     display: grid;
@@ -237,6 +234,7 @@ body{
     grid-row-gap: 6px;
     align-items: center;
     justify-items: center;
+    margin: 30px auto 0 10px;
 }
 .span2{
     grid-column: span 2;
