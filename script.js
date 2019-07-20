@@ -69,4 +69,3 @@ function clearButPress(){
     document.getElementById('entry').value = '0';
 }
 
-

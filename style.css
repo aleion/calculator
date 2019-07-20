@@ -23,15 +23,16 @@
 body{
     text-align: center;
     font-family: 'Raleway', sans-serif;
-
+    
 }
 .calculator{
     width: 100%;
     height:  100vh;
     padding: 35px 0px;
-    background-color: rgb(217, 216, 212);
+    background-color: rgb(204, 204, 200);
     grid-gap: 20px;
-    margin: 0px ;
+    margin: 0;
+    
 }
 
 .screen{
@@ -65,7 +66,7 @@ body{
     border-top-right-radius: 4px;
 
 }
-.entry{
+#entry{
     margin-top: 10px;
     background-color:rgb(198, 196, 173);
     width: 88%;
@@ -78,8 +79,17 @@ body{
     font-size: 48px;
     font-weight: 500;
     font-family: 'calculatorregular';
-    text-shadow:  0px 3px  #9e9e9e ;
+    
     padding-right: 8px;
+}
+.entryOn{
+    text-shadow:  0px 3px  #9e9e9e ;
+    color: rgba(0, 0, 0, 0.8);
+    transition: .6s ease-in;
+}
+.entryOff{
+    color: rgb(198, 196, 173);
+    transition: .6s ease-out;
 }
 .casio{
     margin-top: 10px;
@@ -98,11 +108,39 @@ body{
     margin: 30px auto 30px auto;
 }
 .on{
+    background-color: rgb(108, 111,114);
+    -moz-box-shadow: 0px 1.5px 1px 0px rgb(84,86,85);
+	-webkit-box-shadow: 0px 1.5px 1px 0px rgb(84,86,85);
+    box-shadow: 0px 1.5px 1px 0px rgb(84,86,85);
+    width: 18px;
+    height: 18px;
+    margin: 17px 0 0 10px;
+    border-radius: 20px;
     display: grid;
    align-content: center;
+   justify-items: center;
    color: snow;
    font-size: 12px;
    font-weight: 300;
+}
+#smLedBord{
+    width: 14px;
+    height: 14px;
+    margin-top: 3px;
+    border-radius: 8px;
+   
+}
+.ledOff{
+    background-color: red;
+    opacity: .2;
+}
+.ledOn{
+    background-color: rgb(216, 6, 6);
+    opacity: .8;
+    -moz-box-shadow: 0px 0px 4px 3px rgba(255, 68, 0, 0.795);
+	-webkit-box-shadow: 0px 0px 4px 3px orangered;
+    box-shadow: 0px 0px 4px 3px orangered;
+    
 }
 .logo{
     width: 150px;
@@ -145,14 +183,13 @@ body{
 	box-shadow: 0px 1px 0px 0px rgb(151,151,151);
    
 }
-.switch{
+#turningOn{
     width: 40px;
     height: 26px;
     border-radius: 4px;
     position: absolute;
     z-index: 6;
     top: 2px;
-    right: 0px;
     cursor: pointer;
     -moz-box-shadow: 0px 1.5px 1px 0px rgb(84,86,85);
 	-webkit-box-shadow: 0px 1.5px 1px 0px rgb(84,86,85);
@@ -168,6 +205,12 @@ body{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
+}
+.onn{
+    right: 0;
+}
+.off{
+    left: 0;
 }
 .switch hr{
     border: none;
